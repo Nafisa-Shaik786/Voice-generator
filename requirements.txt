@@ -65,5 +65,5 @@ typing-inspection==0.4.1
 typing_extensions==4.13.2
 uritemplate==4.2.0
 urllib3==2.5.0
-uvicorn==0.34.2
+uvicorn
 Werkzeug==3.1.3
