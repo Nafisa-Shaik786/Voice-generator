@@ -3,10 +3,12 @@ services:
     name: flask-audio-app
     env: python
     plan: free
+    pythonVersion: 3.10
 
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python newfile.py"  # or "python main.py" if you renamed it
+    startCommand: "gunicorn newfile:app"
 
     envVars:
       - key: GOOGLE_API_KEY
-        value: ${GOOGLE_API_KEY}
+        value: AIzaSyBnTFg7CNgZLB-gDA4GeP-Pv2DvBKktFKY
+
