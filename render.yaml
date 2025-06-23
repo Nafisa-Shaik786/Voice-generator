@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flask-audio-app
+    env: python
+    plan: free
+
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python newfile.py"  # or "python main.py" if you renamed it
+
+    envVars:
+      - key: GOOGLE_API_KEY
+        value: ${GOOGLE_API_KEY}
